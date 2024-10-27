@@ -4,7 +4,7 @@ exports.validateIngredientId = validateIngredientId;
 const ingredients_1 = require("../models/ingredients");
 async function validateIngredientId(req, res, next) {
     const allReqIngredients = req.body.ingredients;
-    console.log(allReqIngredients);
+    // console.log(allReqIngredients);
     try {
         for (var id in allReqIngredients) {
             const ingredientId = allReqIngredients[id].ingredient_id;

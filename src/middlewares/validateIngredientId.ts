@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { ingredient } from "../models/ingredients";
 export async function validateIngredientId(req:Request, res:Response, next:NextFunction) {
     const allReqIngredients = req.body.ingredients;
-    console.log(allReqIngredients);
+    // console.log(allReqIngredients);
     try {
         for (var id in allReqIngredients) {
             const ingredientId = allReqIngredients[id].ingredient_id;

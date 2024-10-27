@@ -6,5 +6,8 @@ const validateIngredientId_1 = require("../middlewares/validateIngredientId");
 const cocktailRouter = (0, express_1.Router)();
 // cocktailRouter.get('/cocktails/getAll', getAll);
 cocktailRouter.get('/cocktails/getAll', cocktailController_1.getAll);
+cocktailRouter.get('/cocktails/get/:id', cocktailController_1.get);
 cocktailRouter.post('/cocktails/add', validateIngredientId_1.validateIngredientId, cocktailController_1.add);
+cocktailRouter.put('/cocktails/update/:id', validateIngredientId_1.validateIngredientId, cocktailController_1.update);
+cocktailRouter.delete('/cocktails/delete/:id', cocktailController_1.remove);
 exports.default = cocktailRouter;
