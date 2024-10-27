@@ -90,12 +90,26 @@ async function add(req, res) {
     try {
         const newCocktail = new cocktail_1.cocktail(req.body);
         await newCocktail.save();
+        const ingredientsList = [];
+        for (const i in newCocktail.ingredients) {
+            let ingredientName = "."; // possibly null :c - handled by middleware 
+            console.log(newCocktail.ingredients[i].ingredient_id);
+            const fetchIngredient = await ingredients_1.ingredient.findById(newCocktail.ingredients[i].ingredient_id);
+            if (fetchIngredient) {
+                ingredientName = fetchIngredient.name;
+            }
+            ingredientsList.push({
+                "ingredient_id": newCocktail.ingredients[i].id,
+                "name": ingredientName,
+                "quantity": req.body.ingredients[i].quantity
+            });
+        }
         const responseJson = {
             "id": newCocktail.id,
             "name": newCocktail.name,
             "category": newCocktail.category,
             "instructions": newCocktail.instruction,
-            "ingredients": []
+            "ingredients": ingredientsList
         };
         res.status(201).json(responseJson);
         return;
