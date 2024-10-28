@@ -5,7 +5,7 @@ const ingredientRouter = Router();
 
 
 ingredientRouter.get('/ingredients/getAll', getAll);
-ingredientRouter.get('/ingredients/getById/:id', getById);
+ingredientRouter.get('/ingredients/get/:id', getById);
 
 ingredientRouter.post('/ingredients/add', addIngredient);
 

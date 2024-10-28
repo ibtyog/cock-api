@@ -93,7 +93,6 @@ async function add(req, res) {
         const ingredientsList = [];
         for (const i in newCocktail.ingredients) {
             let ingredientName = "."; // possibly null :c - handled by middleware 
-            console.log(newCocktail.ingredients[i].ingredient_id);
             const fetchIngredient = await ingredients_1.ingredient.findById(newCocktail.ingredients[i].ingredient_id);
             if (fetchIngredient) {
                 ingredientName = fetchIngredient.name;
