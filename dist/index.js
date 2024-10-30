@@ -10,7 +10,7 @@ const database_1 = require("./db/database");
 require('dotenv').config();
 const app = (0, express_1.default)();
 const API_URL = "http://localhost"; // your domain address
-const PORT = 5000; // port for your api
+const PORT = 3000; // port for your api
 const DB_URI = process.env.DB_URL;
 // add DB_URI in ./.env
 (0, database_1.db_connect)(DB_URI);
