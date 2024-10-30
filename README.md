@@ -5,6 +5,10 @@ API for managing cocktails and it's ingredients collections. Made with TypeScrip
 </section>
 <section id="base-url">
 
+## Setup
+
+To run API use npm run prod (for running in dev env use npm run dev - if your env does not support conccurency tasks, use npm run dev_win).
+
 ## Base url
 ### For Cocktails collection:
 <code>http://\${API_URL}:\${PORT}/cocktails</code>
