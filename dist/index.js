@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const cocktail_1 = __importDefault(require("./routes/cocktail"));
 const ingredient_1 = __importDefault(require("./routes/ingredient"));
 const database_1 = require("./db/database");
-require('dotenv').config();
+// import('dotenv').config();
 const app = (0, express_1.default)();
 const API_URL = "http://localhost"; // your domain address
 const PORT = 3000; // port for your api
