@@ -9,7 +9,7 @@ const app = express();
 const API_URL = "http://localhost"; // your domain address
 const PORT = 3000; // port for your api
 const DB_URI = process.env.DB_URL
-
+// add DB_URI in ./.env
 db_connect(DB_URI);
 app.use(express.json());
 
