@@ -7,7 +7,11 @@ API for managing cocktails and it's ingredients collections. Made with TypeScrip
 
 ## Setup
 
-To run API use npm run prod (for running in dev env use npm run dev - if your env does not support conccurency tasks, use npm run dev_win).
+To run API use <code>npm run prod</code>
+
+For running in dev env use <code>npm run dev</code>
+
+If your env does not support conccurency tasks, use <code>npm run dev_win</code>
 
 ## Base url
 ### For Cocktails collection:
@@ -15,7 +19,7 @@ To run API use npm run prod (for running in dev env use npm run dev - if your en
 ### For ingredients collection:
 <code>http://\${API_URL}:\${PORT}/ingredients</code>
 
-<u>By default port is set to 3000.</u>
+<ins>By default port is set to 3000.</ins>
 
 </section>
 
@@ -159,13 +163,13 @@ This endpoint adds cocktail to the collection using POST method, returns created
 }
 ```
 
-<u>Ingredient's IDs are validated before running a POST request. If ingredient with passed ID does not exist - cocktail will not be created!</u>
+<ins>Ingredient's IDs are validated before running a POST request. If ingredient with passed ID does not exist - cocktail will not be created!</ins>
 
 #### Example of invalid ingredient ID response
 
 <code>Ingredient id ${invalid_id} is invalid.</code> Status code (404).
 
-<u>All fields of cocktail model are required in Body Json, to successfully execute POST request!</u>
+<ins>All fields of cocktail model are required in Body Json, to successfully execute POST request!</ins>
 
 #### Example of incomplete body response 
 
@@ -201,7 +205,7 @@ This endpoint adds cocktail to the collection using POST method, returns created
 
 This endpoint updates existing cocktail object in collection. Requires valid ID param and field you want to update in Body (Json format).
 
-<u>Update, also validates ingredients ID before executing PUT request!</u>
+<ins>Update, also validates ingredients ID before executing PUT request!</ins>
 
 #### Example of proper request
 
@@ -292,7 +296,7 @@ This endpoint adds ingredient to the collection using POST method, returns creat
 }
 ```
 
-<u>All fields of ingredient model are required in Body Json, to successfully execute POST request!</u>
+<ins>All fields of ingredient model are required in Body Json, to successfully execute POST request!</ins>
 
 #### Example of incomplete body response 
 
