@@ -13,7 +13,7 @@ For running in dev env use <code>npm run dev</code>
 
 If your env does not support conccurency tasks, use <code>npm run dev_win</code>
 
-Add mongoDB URI env variable as DB_URL in .env in main directory or change it in src/index.ts!
+Add mongoDB URI enviromental variable or change it to static in src/index.ts!
 
 ## Base url
 ### For Cocktails collection:
