@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && node src",
+    "build": "tsc && node dist/index.js",
     "dev_win": "concurrently tsc -w & nodemon dist/index.js",
     "prod": "nodemon dist/index.js",
     "dev": "tsc -w & nodemon dist/index.js",
