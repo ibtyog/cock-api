@@ -110,7 +110,7 @@ The response returned is a JSON object with the following schema:
     <li>Content-type: application/json</li>
 </ul>
 
-```json
+```
 {
     "id" : int,
     "name" : String,
@@ -141,7 +141,7 @@ The response returned is a array of JSON object with the schema same as in <code
 This endpoint adds cocktail to the collection using POST method, returns created object. 
 
 #### Example body:
-```json
+```
 {
     "name": "Specjal z colą",
     "category": "Pifko",
@@ -174,7 +174,7 @@ This endpoint adds cocktail to the collection using POST method, returns created
     <li>Content-type: application/json</li>
 </ul>
 
-```javascript 
+``` 
 {
     "id": "672226e6eff4fd73f136eeb9",
     "name": "Margarita",
@@ -207,7 +207,7 @@ This endpoint updates existing cocktail object in collection. Requires valid ID 
 
 #### Body
 
-```javascript
+```
 {
     "name" : "updated_name"
 }
@@ -255,7 +255,7 @@ The response returned is a JSON object with the following schema:
     <li>Content-type: application/json</li>
 </ul>
 
-```json
+```
 {
     "id" : int,
     "name" : String,
@@ -279,7 +279,7 @@ The response returned is a array of JSON object with the schema same as in <code
 This endpoint adds ingredient to the collection using POST method, returns created object. 
 
 #### Example body:
-```json
+```
 {
     "name": "cola",
     "descrption": "sweet",
@@ -301,7 +301,7 @@ This endpoint adds ingredient to the collection using POST method, returns creat
     <li>Content-type: application/json</li>
 </ul>
 
-```javascript 
+``` 
 {
     "id": "672226e6eff4fd73f136eeb9",
     "name": "cola",
@@ -326,7 +326,7 @@ This endpoint updates existing ingredient object in collection. Requires valid I
 
 #### Body
 
-```javascript
+```
 {
     "name" : "updated_name"
 }
